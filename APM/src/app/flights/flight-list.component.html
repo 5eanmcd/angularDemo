@@ -1,0 +1,28 @@
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+        {{pageTitle}}
+    </div>
+    <div class='panel-body'>
+        <div class="table-responsive">
+            <table class='table' *ngIf='flights'>
+                 <!-- *ngIf='flights && flights.length'> -->
+                <thead>
+                    <tr>
+                        <th>Airport</th>
+                        <th>Status</th>
+                        <th>StatusText</th>
+                        <th>Airline</th>
+                        <th>Scheduled</th>
+                    </tr>
+                    <tr *ngFor='let flightRecord of flights.flightRecord'> 
+                        <td>{{flightRecord.airportCode}}</td>
+                        <td>{{flightRecord.status}}</td>
+                        <td>{{flightRecord.statusText}}</td>
+                        <td>{{flightRecord.airlineCode | lowercase}}</td>
+                        <td>{{flightRecord.scheduled}}</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>

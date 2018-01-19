@@ -1,0 +1,22 @@
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+        {{pageTitle}}
+    </div>
+    <div class='panel-body'>
+        <div class="table-responsive">
+            <table class='table' *ngIf='flights && flights.length'>
+                 <!-- *ngIf='flights && flights.length'> -->
+                <thead>
+                    <tr>
+                        <th>Airport</th>
+                        <th>Airline</th>
+                    </tr>
+                    <tr *ngFor='let flight of flights'> 
+                        <td>{{flight.airportCode}} z</td>
+                        <td>{{flight.airlineCode | lowercase}} c</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>

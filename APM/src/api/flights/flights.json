@@ -1,0 +1,35 @@
+{
+    "airportCode": "LAX",
+    "airlineCode": "DL",
+    "flightDate": "2018-01-18",
+    "adi": "A",
+    "subscribedForUpdates": false,
+    "flightRecord": [
+        {
+            "operatingCarrier": {
+                "airlineCode": "DL",
+                "flightNumber": "1246",
+                "airline": "Delta Air Lines"
+            },
+            "airportCode": "CVG",
+            "aircraft": "739",
+            "status": "SC",
+            "statusText": "Scheduled",
+            "scheduled": "2018-01-18T10:25:00-0800",
+            "city": "Cincinnati",
+            "marketingCarriers": [
+                {
+                    "airlineCode": "VS",
+                    "flightNumber": "2176",
+                    "airline": "Virgin Atlantic Airways"
+                },
+                {
+                    "airlineCode": "VA",
+                    "flightNumber": "6521 ",
+                    "airline": "Virgin Australia"
+                }
+            ]
+        }
+    ],
+    "success": true  
+}
